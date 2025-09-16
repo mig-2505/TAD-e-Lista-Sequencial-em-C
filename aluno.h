@@ -7,6 +7,7 @@ typedef struct {
     float nota;
 } Aluno;
 // Operações do TAD
+void alterarNota(Aluno *a, float novaNota);
 Aluno criarAluno(const char *nome, int rm, float nota);
 void imprimirAluno(Aluno a);
 #endif
