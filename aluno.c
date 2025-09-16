@@ -9,6 +9,13 @@ Aluno criarAluno(const char *nome, int rm, float nota) {
     a.nota = nota;
     return a;
 }
+
+void alterarNota(Aluno *a, float novaNota) {
+    if (a != NULL) {
+        a->nota = novaNota; //Acessando o campo nota
+    }
+}
+
 void imprimirAluno(Aluno a) {
     printf("Nome: %s | RM: %d | Nota: %.2f\n", a.nome, a.rm, a.nota);
 }
