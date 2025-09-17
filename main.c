@@ -31,5 +31,15 @@ int main() {
     printf("\nLista após remoção:\n");
     imprimirLista(l);
     
+
+    // --- Exercício 3 (Busca por RM)
+int pos = buscarAlunoPorRM(&l, 559087);
+
+    if (pos != -1) {
+        printf("Aluno encontrado na posição %d:\n", pos);
+        imprimirAluno(l.dados[pos]);
+    } else {
+        printf("Aluno com RM %d não encontrado!\n", 559087);
+    }
     return 0;
 }
