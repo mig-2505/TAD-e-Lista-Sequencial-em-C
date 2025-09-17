@@ -16,5 +16,5 @@ void inicializarLista(Lista *l);
 int inserirAluno(Lista *l, Aluno a);
 void imprimirLista(Lista l);
 void removerUltimo(Lista *l);
-
+int buscarAlunoPorRM(const Lista *l, int rm);
 #endif

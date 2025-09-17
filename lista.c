@@ -30,3 +30,12 @@ void removerUltimo(Lista *l) {
        printf("Lista vazia, nada a remover.\n");
    }
 }
+
+void buscarAlunoPorRM(Lista l, int rm) {
+    for (int i = 0; i < l.qtd; i++) {
+        if (l.dados[i].rm == rm) {
+            return i; // retorna posição do aluno
+        }
+    }
+    return -1; // não encontrado
+}
