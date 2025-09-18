@@ -31,7 +31,7 @@ int main() {
     printf("\nLista após remoção:\n");
     imprimirLista(l);
     
-
+    
     // --- Exercício 3 (Busca por RM)
 int pos = buscarAlunoPorRM(&l, 559087);
 
@@ -43,3 +43,15 @@ int pos = buscarAlunoPorRM(&l, 559087);
     }
     return 0;
 }
+// exercicio 4
+float calcularMedia(Lista l) {
+    float soma = 0;
+    for (int i = 0; i < l.qtd; i++) {
+        soma += l.dados[i].nota;
+    }
+    return (l.qtd > 0) ? soma / l.qtd : 0;
+}
+
+float calcularMedia(Lista l);
+
+printf("\nMédia das notas: %.2f\n", calcularMedia(l));
