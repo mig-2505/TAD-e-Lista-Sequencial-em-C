@@ -39,3 +39,10 @@ void buscarAlunoPorRM(Lista l, int rm) {
     }
     return -1; // não encontrado
 }
+float calcularMedia(Lista l) {
+    float soma = 0;
+    for (int i = 0; i < l.qtd; i++) {
+        soma += l.dados[i].nota;
+    }
+    return (l.qtd > 0) ? soma / l.qtd : 0;
+}
